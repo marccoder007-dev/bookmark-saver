@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #333, #f1f);
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f1f, #333);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(237, 217, 237);
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+
+input:focus {
+  border: none;
+  outline: 2px solid rgb(104, 6, 6);
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  color: rgb(202, 140, 202);
+  cursor: pointer;
+  background-color: #201f1f;
+}
+
+button:hover {
+  background-color: #2f2e2e;
+}
+
+#bookmark-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#bookmark-list li {
+  padding: 7px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bookmark-list a {
+  text-decoration: none;
+  color: rgb(130, 48, 130);
+}
+
+#bookmark-list .delete-btn {
+  border: none;
+  border-radius: 3px;
+  /* padding: 10px; */
+  color: white;
+  background: rgb(182, 11, 182);
+  cursor: pointer;
+}
+
+#bookmark-list .delete-btn:hover {
+  background-color: rgb(213, 64, 213);
+}
